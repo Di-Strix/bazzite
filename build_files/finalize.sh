@@ -268,11 +268,10 @@ assign_chunk bazzite-package-management monthly \
     /etc/dnf/dnf.conf \
     /etc/profile.d/dnf-dummy.sh \
     /etc/uupd/config.json \
-    /usr/bin/{bbrew-helper,bruh,copr,dnf} \
+    /usr/bin/{bruh,copr,dnf} \
     /usr/libexec/uupd-update \
     /usr/libexec/ogc/os-update \
     /usr/libexec/os-branch-select \
-    /usr/share/applications/bbrew.desktop
 
 assign_chunk bazzite-gaming-helpers monthly \
     /usr/bin/{gameclass,mesa-git,protontricks,protontricks-launch,sd0,steam-tweaks}
@@ -363,7 +362,6 @@ assign_chunk bazzite-dx quarterly \
     /usr/share/applications/gamemode-nested.desktop \
     /usr/share/ublue-os/homebrew/bazzite-dx-*.Brewfile \
     /usr/share/ublue-os/privileged-setup.hooks.d/20-dx.sh \
-    /usr/share/ublue-os/user-setup.hooks.d/{11-vscode-extensions,99-privileged}.sh
 
 # Catch files changed since the last stage's reset (initramfs, image-info, overrides).
 /ctx/reset-mtimes.sh

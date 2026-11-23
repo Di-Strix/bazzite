@@ -13,15 +13,9 @@ echo "==> Installing KDE packages..."
 
 dnf5 -y install \
     steamdeck-kde-presets-desktop \
-    rom-properties-kf6 \
     gnome-disk-utility \
-    krunner-bazaar \
     krunner-yafti \
     krdc \
-    tesseract-devel \
-    tesseract-langpack-{ces,chi_sim,chi_sim_vert,chi_tra,chi_tra_vert,deu,ell,fra,ita,jpn,jpn_vert,nld,pol,por,rus,spa,tur} \
-    plasma-oxygen \
-    oxygen-icon-theme
 
 # -- Remove unnecessary packages --
 # Remove default Fedora KDE packages that conflict with Bazzite customization.
